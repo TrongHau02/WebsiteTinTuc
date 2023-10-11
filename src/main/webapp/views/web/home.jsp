@@ -11,6 +11,6 @@
     <title>Trang chủ</title>
 </head>
 <body>
-    <h1>Xin chào, đây là giao diện web</h1>
+    <h1>${model.fullName}</h1>
 </body>
 </html>

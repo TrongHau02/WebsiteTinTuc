@@ -1,6 +1,8 @@
 package webtintuc.controller.web;
 
 
+import webtintuc.model.UserModel;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,6 +15,9 @@ import java.io.IOException;
 public class HomeController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        UserModel userModel = new UserModel();
+        userModel.setFullName("Đây là trang giao diện web");
+        req.setAttribute("model", userModel);
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/views/web/home.jsp");
         requestDispatcher.forward(req, resp);
     }
