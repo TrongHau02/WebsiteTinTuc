@@ -15,6 +15,7 @@
         <servlet.api.version>4.0.1</servlet.api.version>
         <jsp.api.version>2.3.3</jsp.api.version>
         <jstl.version>1.2</jstl.version>
+        <sitemesh.version>2.5.0</sitemesh.version>
     </properties>
 
     <dependencies>
@@ -47,6 +48,12 @@
             <version>${jstl.version}</version>
         </dependency>
 
+        <!-- sitemesh -->
+        <dependency>
+            <groupId>opensymphony</groupId>
+            <artifactId>sitemesh</artifactId>
+            <version>${sitemesh.version}</version>
+        </dependency>
 
     </dependencies>
     <build>
